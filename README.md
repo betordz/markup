@@ -1,0 +1,5 @@
+Name                             | Default                                              | Description
+-------------------------------- | ---------------------------------------------------- | -------------------------------------------------------------
+tnf\_config                      | tnf_config:<br>&nbsp;&nbsp; - namespace: "{{ dci_openshift_app_ns }}"<br>&nbsp;&nbsp; targetpodlabels: []<br>&nbsp;&nbsp;  operators_regexp: ""<br> &nbsp;&nbsp; exclude_connectivity_regexp: ""<br> | A complex variable to define the configuration to be applied in CNF Cert Suite.<ul> <li> namespace: Target namespace. </li> <li>targetpodlabels: List of autodiscovery labels to be considered by the CNF Cert Suite for pod testing.</li><li> operators_regexp:  A regexp to select operators to be tested by the CNF Cert Suite (optional). </li> <li>exclude_connectivity_regexp: A regexp to exclude containers from the connectivity test (optional).</li> </ul> See [this](https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/samples/tnf_test_example/hooks/templates/test_deployment.yml.j2) for more details.<br> * Testing multiple resources on different namespaces is supported.
+
+
